@@ -24,7 +24,7 @@ class HashMap {
     const index = this._findSlot(key);
     
     if(!this._hashTable[index]) {
-      this.length++
+      this.length++;
     }
     this._hashTable[index] = {
       key,

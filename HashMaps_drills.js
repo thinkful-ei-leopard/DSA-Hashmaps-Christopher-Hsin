@@ -1,9 +1,9 @@
 const HashMap = require('./HashMaps');
 
 function main(){
+  HashMap.MAX_LOAD_RATIO = 0.5;
+  HashMap.SIZE_RATIO = 3; 
   let lotr = new HashMap;
-  lotr.MAX_LOAD_RATIO = 0.5;
-  lotr.SIZE_RATIO = 3; 
   lotr.set("Hobbit", "Bilbo");
   lotr.set("Hobbit", "Frodo");
   lotr.set("Wizard", "Gandalf");
@@ -21,7 +21,7 @@ function main(){
   return lotr;
 }
 
-console.log(main());
+console.log(main())
 
 /*What are the values of Maiar and Hobbit that you have? Maiar:Sauron, Hobbit: Frodo
 Is there a discrepancy? only received one of each value, instread of two.*/
