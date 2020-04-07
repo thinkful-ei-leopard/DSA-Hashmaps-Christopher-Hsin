@@ -56,3 +56,37 @@ function removeDuplicates(str) {
 console.log(removeDuplicates('google all that you think can think of'));
 
 //drill 5
+
+function isPalindrome(str){
+  let isPalin = new HashMap;
+  
+}
+
+//drill 5
+
+function count(str){
+  const count={};
+  let letters = str.split('');
+  console.log(letters)
+  for(let i=0; i<letters.length; i++){
+    const letter= letters[i]
+    if(count[letter]){
+      count [letter]++;
+    }else{
+      count[letter]=1;
+    }
+  }
+  console.log(count)
+  let odds = 0 ;
+  for(const key in count){
+    const value = count[key]
+    console.log(key, value)
+  if(value%2 === 1){
+    odds++;
+  }
+  }
+  return odds < 2;
+}
+
+
+console.log(count('north'));
